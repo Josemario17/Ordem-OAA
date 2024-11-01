@@ -53,7 +53,7 @@ export default function Footer() {
               href="#"
               className="inline-block mx-1 underline font-normal text-black transition hover:text-primary"
             >
-              Gsaplatform
+              José Dos Santos
             </a>
           </div>
         </div>
