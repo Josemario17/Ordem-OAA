@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+@font-face {
+  font-family: Raleway;
+  src: url('./assets/fontsStyle/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: Quicksand;
+  src: url('./assets/fontsStyle/Quicksand-Regular.ttf');
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url('./assets/fontsStyle/Raleway-Medium.ttf');
+}
+@font-face {
+  font-family: Raleway-italic;
+  src: url('./assets/fontsStyle/Raleway-LightItalic.ttf');
+}
+
+@layer utilities {
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white; 
+    color: transparent; 
+  }
+}
+
+.raleway-regular {
+  font-family: Raleway;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway-bold {
+  font-family: Raleway-Bold;
+  font-style: normal;
+}
+.raleway-italic {
+  font-family: Raleway-italic;
+  font-weight: 700;
+}
+
+.Quicksand-regular {
+  font-family: Quicksand;
+  font-style: normal;
+}
+
+.gideon-roman-regular {
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
+}
+.card-tip-active{
+  background-image: url('assets/img/bg-etica-disc.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.constitucionalCard:hover{
+  background-image: url('assets/img/constitucional-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.direitosHCard:hover{
+  background-image: url('assets/img/Direito.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.DireitoPCard:hover{
+  background-image: url('assets/img/Advogados.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+:is(.constitucionalCard:hover, .DireitoPCard:hover) h3{
+  color: white;
+}
+
+:is(.constitucionalCard:hover, .direitosHCard:hover, .DireitoPCard:hover) p{
+  background-color: #754d2eb5;
+  color: #eee8e3;
+}
+:is(.constitucionalCard, .direitosHCard, .DireitoPCard){
+  transition: .7s ease-out;
+}
+
+.leading-gideon{
+  line-height: 3.7rem !important;
+}
+
+.bgFundo{
+  background-image: url('assets/img/bg-4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #eee8e3;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d2bb08' fill-opacity='0.14' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
